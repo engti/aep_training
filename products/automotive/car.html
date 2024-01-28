@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product: Car</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!--Include Analytics script to write data-->
+        <script src="/js/analytics.js" defer></script>
+    <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/1650def54d.js" crossorigin="anonymous"></script>
+    
+    <!--Adobe AEP Includes-->
+        <script src="https://assets.adobedtm.com/6d07e8369d1a/68e71bdd1dc8/launch-bed8f02d7183-development.min.js" async>
+        </script>
+
+    <!--something else-->
+
+</head>
+
+<body>
+  <!--Adobe Page Load Data Layer Push-->
+  <script>
+    window.adobeDataLayer = window.adobeDataLayer || [];
+    window.adobeDataLayer.push({ 
+        "event":"page_view",
+        "content": {
+            "title": "Car",
+            "category": "pdp",
+            "subCategory": "automotive"
+        },
+        "user": {
+            "id": "A1234",
+            "type": "registered",
+            "loggedInStatus": "logged in"
+        }
+        });
+        window.adobeDataLayer.push({ 
+        "event":"product_view",
+        "product": {
+            "name": "car",
+            "type": "automotive"
+        }
+        });
+    </script>
+    
+    <!--header-->
+        <div class="header">
+            <a href="#default" class="logo">Car</a>
+            <div class="header-right">
+            <a class="active" href="/index.html">Home</a>
+            <a href="#contact">Cart</a>
+            </div>
+        </div>
+    <!--body-->
+        <!--row 1-->
+        <div id="container">
+            <div class="card">
+            <h2>Car</h2>
+            <i class="fa-solid fa-car fa-2x"></i>
+            <button class="btn" onclick="writeCartEntries('addToCart','car',1,23190.00)">Add to Cart</button>
+            </div>
+        </div>
+    <!--footer-->
+
+</body>
+
+</html>
+
