@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product: Truck</title>
+    <title>Cart: Cart</title>
     <link rel="stylesheet" href="/styles.css">
     <!--Include Analytics script to write data-->
         <script src="/js/analytics.js" defer></script>
@@ -27,21 +27,14 @@
     window.adobeDataLayer.push({ 
         "event":"page_view",
         "content": {
-            "title": "Truck",
-            "category": "pdp",
-            "subCategory": "automotive"
+            "title": "Cart",
+            "category": "cart",
+            "subCategory": ""
         },
         "user": {
             "id": "A1234",
             "type": "registered",
             "loggedInStatus": "logged in"
-        }
-        });
-        window.adobeDataLayer.push({ 
-        "event":"product_view",
-        "product": {
-            "name": "truck",
-            "type": "automotive"
         }
         });
     </script>
@@ -51,17 +44,20 @@
             <a href="#default" class="logo">AEP Store</a>
             <div class="header-right">
             <a class="active" href="/index.html">Home</a>
-            <a href="/cart/cart.html">Cart</a>
+            <a href="#contact">Cart</a>
             </div>
         </div>
     <!--body-->
         <!--row 1-->
         <div id="container">
             <div class="card">
-            <h2>Truck</h2>
-            <i class="fa-solid fa-truck-pickup fa-2x"></i>
-            <button class="btn" onclick="writeCartEntries('addToCart','truck',1,33450.00)">Add to Cart</button>
+                <h2>Items in Cart</h2>
+                <ul class="cart-items-list"></ul>
+                <div id = "total-price"></div>
+                <button id="clear-cart">Clear Cart</button>
+                <button id="checkout-cart" onclick="location.href='../cart/confirmation.html'">Checkout</button>
             </div>
+            <script src="/js/cart.js"></script>
         </div>
     <!--footer-->
 
