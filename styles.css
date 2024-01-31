@@ -18,7 +18,7 @@ body {
 }
 
 #container div{
-    height: 150px;
+    // height: 200px;
     width: 335px;
     background: #ccccdb;
     margin: 60px;
@@ -63,6 +63,17 @@ body {
 }
 
 .card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 20rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .cart-card {
     background-color: white;
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
