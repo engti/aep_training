@@ -18,6 +18,30 @@
     </head>
 
     <body>
+    <!--Adobe Page Load Data Layer Push-->
+        <script>
+            window.adobeDataLayer = window.adobeDataLayer || [];
+            window.adobeDataLayer.push({ 
+                "event":"page_view",
+                "content": {
+                    "title": "Exercise",
+                    "category": "category",
+                    "subCategory": ""
+                },
+                "user": {
+                    "id": "A1234",
+                    "type": "registered",
+                    "loggedInStatus": "logged in"
+                }
+                });
+                window.adobeDataLayer.push({ 
+                "event":"category_view",
+                "product": {
+                    "name": "exercise",
+                    "type": "exercise"
+                }
+                });
+            </script>   
         <!--header-->
         <div class="header">
             <a href="#default" class="logo">AEP Store</a>
