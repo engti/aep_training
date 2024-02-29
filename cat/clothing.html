@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Category: Clothing</title>
+        <link rel="stylesheet" href="../styles.css">
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/1650def54d.js" crossorigin="anonymous"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AEP Training Page</title>
-  <link rel="stylesheet" href="../styles.css">
-</head>
+    <!--Adobe AEP Includes-->
+        <!-- <script src="https://assets.adobedtm.com/6d07e8369d1a/68e71bdd1dc8/launch-bed8f02d7183-development.min.js" async>
+        </script> -->
+        <script src="https://assets.adobedtm.com/35066b6d6803/11265f8b995d/launch-a128c2e5d1f8-development.min.js" async></script>
+
+    <!--something else-->
+    </head>
+
     <body>
+    <!--Adobe Page Load Data Layer Push-->
+        <script>
+            window.adobeDataLayer = window.adobeDataLayer || [];
+            window.adobeDataLayer.push({ 
+                "event":"page_view",
+                "content": {
+                    "title": "Clothing",
+                    "category": "category",
+                    "subCategory": ""
+                },
+                "user": {
+                    "id": "A1234",
+                    "type": "registered",
+                    "loggedInStatus": "logged in"
+                }
+                });
+                window.adobeDataLayer.push({ 
+                "event":"category_view",
+                "product": {
+                    "name": "clothing",
+                    "type": "clothing"
+                }
+                });
+            </script>   
         <!--header-->
         <div class="header">
             <a href="#default" class="logo">AEP Store</a>
@@ -21,25 +54,34 @@
             <!--row 1-->
             <div id="container">
                 <div class="card">
-                    <h2>Automotives</h2>
+                    <a href="../products/clothing/fleece.html">
+                    <img src="/images/backpack.jpg" alt="backpack" style="width:100px;height:100px;"></a>
+                    <h2>Fleece</h2>
                 </div>
                 <div class="card">
-                    <h2>Watches</h2>
+                    <a href="../products/clothing/hoodie.html">
+                    <img src="/images/impulsebag.jpg" alt="impulsebag" style="width:100px;height:100px;"></a>
+                    <h2>Hoodie</h2>
                 </div>
                 <div class="card">
-                    <h2>Clothes</h2>
-                </div>
-            </div>
-            <!--row 2-->
-            <div id="container">
-                <div class="card">
-                    <h2>Furniture</h2>
+                    <a href="../products/clothing/hoodiejacket.html">
+                    <img src="/images/shoulderbag.jpg" alt="shoulderbag" style="width:100px;height:100px;"></a>
+                    <h2>Hoodie Jacket</h2>
                 </div>
                 <div class="card">
-                    <h2>Light</h2>
+                    <a href="../products/clothing/shirt.html">
+                    <img src="/images/shirt.jpg" alt="shirt" style="width:100px;height:100px;"></a>
+                    <h2>Shirt</h2>
                 </div>
                 <div class="card">
-                    <h2>Accessories</h2>
+                    <a href="../products/clothing/tankshirt.html">
+                    <img src="/images/tankshirt.jpg" alt="tankshirt" style="width:100px;height:100px;"></a>
+                    <h2>Tank shirt</h2>
+                </div>
+                <div class="card">
+                    <a href="../products/clothing/trekjacket.html">
+                    <img src="/images/trekjacket.jpg" alt="trekjacket" style="width:100px;height:100px;"></a>
+                    <h2>Trek jacket</h2>
                 </div>
             </div>
         <!--footer-->

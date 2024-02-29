@@ -4,19 +4,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AEP Training Page</title>
+        <title>Category: Accessories</title>
         <link rel="stylesheet" href="../styles.css">
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/1650def54d.js" crossorigin="anonymous"></script>
 
-        <!--Adobe AEP Includes-->
-            <script src="https://assets.adobedtm.com/6d07e8369d1a/68e71bdd1dc8/launch-bed8f02d7183-development.min.js" async>
-            </script>
+    <!--Adobe AEP Includes-->
+        <!-- <script src="https://assets.adobedtm.com/6d07e8369d1a/68e71bdd1dc8/launch-bed8f02d7183-development.min.js" async>
+        </script> -->
+        <script src="https://assets.adobedtm.com/35066b6d6803/11265f8b995d/launch-a128c2e5d1f8-development.min.js" async></script>
 
-        <!--something else-->
+    <!--something else-->
     </head>
 
     <body>
+    <!--Adobe Page Load Data Layer Push-->
+        <script>
+            window.adobeDataLayer = window.adobeDataLayer || [];
+            window.adobeDataLayer.push({ 
+                "event":"page_view",
+                "content": {
+                    "title": "Accessories",
+                    "category": "category",
+                    "subCategory": ""
+                },
+                "user": {
+                    "id": "A1234",
+                    "type": "registered",
+                    "loggedInStatus": "logged in"
+                }
+                });
+                window.adobeDataLayer.push({ 
+                "event":"category_view",
+                "product": {
+                    "name": "accessories",
+                    "type": "accessories"
+                }
+                });
+            </script>   
         <!--header-->
         <div class="header">
             <a href="#default" class="logo">AEP Store</a>
@@ -29,16 +54,9 @@
             <!--row 1-->
             <div id="container">
                 <div class="card">
-                    <a href="../products/automotive/car.html"><i class="fa-solid fa-car fa-5x"></i></a>
-                    <h2>Car</h2>
-                </div>
-                <div class="card">
-                    <a href="../products/automotive/truck.html"><i class="fa-solid fa-truck-pickup fa-5x"></i></a>
-                    <h2>Truck</h2>
-                </div>
-                <div class="card">
-                    <a href="../products/automotive/boat.html"><i class="fa-solid fa-sailboat fa-5x"></i></a>
-                    <h2>Boat</h2>
+                    <a href="../products/accessories/waterbottle.html">
+                    <img src="/images/waterbottle.jpg" alt="water bottle" style="width:100px;height:100px;"></a>
+                    <h2>Waterbottle</h2>
                 </div>
             </div>
         <!--footer-->

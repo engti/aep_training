@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product: Car</title>
+    <title>Clothing: Hoodie</title>
     <link rel="stylesheet" href="/styles.css">
     <!--Include Analytics script to write data-->
         <script src="/js/analytics.js" defer></script>
@@ -13,8 +13,9 @@
         <script src="https://kit.fontawesome.com/1650def54d.js" crossorigin="anonymous"></script>
     
     <!--Adobe AEP Includes-->
-        <script src="https://assets.adobedtm.com/6d07e8369d1a/68e71bdd1dc8/launch-bed8f02d7183-development.min.js" async>
-        </script>
+        <!-- <script src="https://assets.adobedtm.com/6d07e8369d1a/68e71bdd1dc8/launch-bed8f02d7183-development.min.js" async>
+        </script> -->
+        <script src="https://assets.adobedtm.com/35066b6d6803/11265f8b995d/launch-a128c2e5d1f8-development.min.js" async></script>
 
     <!--something else-->
 
@@ -27,9 +28,9 @@
     window.adobeDataLayer.push({ 
         "event":"page_view",
         "content": {
-            "title": "Car",
+            "title": "Hoodie",
             "category": "pdp",
-            "subCategory": "automotive"
+            "subCategory": "clothing"
         },
         "user": {
             "id": "A1234",
@@ -40,8 +41,8 @@
         window.adobeDataLayer.push({ 
         "event":"product_view",
         "product": {
-            "name": "car",
-            "type": "automotive"
+            "name": "hoodie",
+            "type": "clothing"
         }
         });
     </script>
@@ -58,9 +59,9 @@
         <!--row 1-->
         <div id="container">
             <div class="card">
-            <h2>Car</h2>
-            <i class="fa-solid fa-car fa-2x"></i>
-            <button class="btn" onclick="writeCartEntries('addToCart','car',1,23190.00)">Add to Cart</button>
+            <h2>Hoodie</h2>
+            <img src="/images/hoodie.jpg" alt="hoodie" style="width:200px;height:200px;"></a><br>
+            <button class="btn" onclick="writeCartEntries('addToCart','hoodie',1,18.00)">Add to Cart</button>
             </div>
         </div>
     <!--footer-->
