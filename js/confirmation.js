@@ -16,3 +16,7 @@
 // write cart entries array to datalayer
     adobeDataLayer.push({ 'event': 'order_confirmation', 'product': cart });
     console.log(cart);
+
+// clear local storage
+localStorage.removeItem("cart_entries");
+console.log("local storage cleared");
